@@ -1,0 +1,28 @@
+{
+  "name": "hobby-board",
+  "version": "1.0.0",
+  "description": "# 2. 사용 기술 * React * Redux Toolkit * Next.js * HTML * CSS",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeooongin/hobby-board.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeooongin/hobby-board/issues"
+  },
+  "homepage": "https://github.com/jeooongin/hobby-board#readme",
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.9.1",
+    "next": "^12.3.4",
+    "next-redux-wrapper": "^8.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^8.0.5",
+    "styled-components": "^5.3.6"
+  }
+}
