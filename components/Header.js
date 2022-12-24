@@ -18,8 +18,30 @@ const HeaderWrapper = styled.div`
     display: flex;
   }
 
-  & .left {
+  & .left button {
     margin-right: 20px;
+    background: ${OpenColor.cyan[6]};
+  }
+
+  & .right button {
+    background: ${OpenColor.cyan[6]};
+  }
+
+  & button {
+    /* 생략 */
+    margin: 0;
+    padding: 0.5rem 1rem;
+
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+
+    width: auto;
+
+    border: none;
+    border-radius: 4px;
   }
 `;
 
@@ -29,18 +51,24 @@ const Header = () => {
       <ul>
         <Link href="/">
           <a>
-            <li>hobby-board</li>
+            <li>
+              <button>hobby-board</button>
+            </li>
           </a>
         </Link>
         <div className="header-right">
           <Link href="/login">
             <a>
-              <li className="left">로그인</li>
+              <li className="left">
+                <button>로그인</button>
+              </li>
             </a>
           </Link>
           <Link href="signup">
             <a>
-              <li className="right">회원가입</li>
+              <li className="right">
+                <button>회원가입</button>
+              </li>
             </a>
           </Link>
         </div>
