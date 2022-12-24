@@ -4,7 +4,7 @@ import OpenColor from "open-color";
 import Link from "next/link";
 
 const HeaderWrapper = styled.div`
-  background: ${OpenColor.indigo[6]};
+  background: ${OpenColor.blue[3]};
 
   & ul {
     display: flex;
@@ -20,11 +20,11 @@ const HeaderWrapper = styled.div`
 
   & .left button {
     margin-right: 20px;
-    background: ${OpenColor.cyan[6]};
+    background: ${OpenColor.teal[4]};
   }
 
   & .right button {
-    background: ${OpenColor.cyan[6]};
+    background: ${OpenColor.teal[4]};
   }
 
   & button {
