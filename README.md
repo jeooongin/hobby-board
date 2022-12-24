@@ -14,4 +14,20 @@
 
 <details>
   <summary>footer가 화면 맨 아래 위치하지 않는 문제</summary>
+
+    content와 footer를 감싸는 div에
+    ```
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    ```
+    를 적용한 후
+
+    content를 감싸는 div에
+    ```
+    flex: 1;
+    ```
+    을 적용해 content가 여백을 다 채우게 되므로
+    footer가 맨 아래 위치하게 되었다.
+
 </details>
