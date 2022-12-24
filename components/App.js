@@ -4,8 +4,15 @@ import Footer from "./Footer";
 import Header from "./Header";
 
 const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+`;
+
+const ContentWrapper = styled.div`
   margin-top: 10px;
   display: flex;
+  flex: 1;
 
   & .first-section {
     width: 30%;
@@ -22,15 +29,15 @@ const Wrapper = styled.div`
 
 const App = ({ children }) => {
   return (
-    <>
+    <Wrapper>
       <Header />
-      <Wrapper>
+      <ContentWrapper>
         <div className="first-section"></div>
         <div className="second-section">{children}</div>
         <div className="third-section"></div>
-      </Wrapper>
+      </ContentWrapper>
       <Footer />
-    </>
+    </Wrapper>
   );
 };
 
